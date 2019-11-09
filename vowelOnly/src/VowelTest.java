@@ -29,6 +29,24 @@ class VowelTest
         Assertions.assertEquals(expectedOutput,vowelOnly.vowelOnly(input),"Ouput should contain only vowels for input " + input);
     }
 
+    @Test
+    void vowelOnlyTest3()
+    {
+        String input = "HELLO";
+        String expectedOutput = "EO";
+        VowelOnly vowelOnly = new VowelOnly();
+        Assertions.assertEquals(expectedOutput,vowelOnly.vowelOnly(input),"Ouput should contain only vowels for input " + input);
+    }
+
+    @Test
+    void vowelOnlyTest4()
+    {
+        String input = "hellO";
+        String expectedOutput = "eO";
+        VowelOnly vowelOnly = new VowelOnly();
+        Assertions.assertEquals(expectedOutput,vowelOnly.vowelOnly(input),"Ouput should contain only vowels for input " + input);
+    }
+
     @AfterAll
     static void afterAll()
     {

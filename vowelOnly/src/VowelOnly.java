@@ -14,6 +14,8 @@ public class VowelOnly {
     {
         Character[] vowelsChar = new Character[]{'a','e','i','o','u'};
         HashSet<Character> vowels = new HashSet<>(Arrays.asList(vowelsChar));
+        Arrays.stream(vowelsChar).map(Character::toUpperCase).forEach(vowels::add);
+
         StringBuilder stringBuilder = new StringBuilder();
 
         for (int i= 0; i < input.length(); i++)
